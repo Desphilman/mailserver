@@ -30,6 +30,10 @@ manpage_directory = /usr/share/man
 sample_directory = /usr/share/doc/postfix/samples
 readme_directory = /usr/share/doc/postfix/README_FILES
 #
+smtpd_sasl_auth_enable = yes
+smtpd_sasl_type = dovecot
+smtpd_sasl_path = private/auth
+smtpd_relay_restrictions = permit_sasl_authenticated, permit_tls_all_clientcerts, reject_unauth_destination
 smtpd_tls_cert_file = /etc/pki/tls/certs/desphilman_com.crt
 smtpd_tls_key_file = /etc/pki/tls/private/desphilman.com.key
 smtpd_tls_security_level = encrypt
