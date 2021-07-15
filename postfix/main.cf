@@ -1,4 +1,4 @@
-
+message_size_limit = 40960000
 compatibility_level = 2
 queue_directory = /var/spool/postfix
 command_directory = /usr/sbin
