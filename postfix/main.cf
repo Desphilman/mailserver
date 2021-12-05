@@ -1,4 +1,5 @@
-
+mailbox_size_limit = 1000000000
+message_size_limit = 200000000
 compatibility_level = 2
 queue_directory = /var/spool/postfix
 command_directory = /usr/sbin
