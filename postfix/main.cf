@@ -1,4 +1,4 @@
-message_size_limit = 40960000
+message_size_limit = 105960000
 compatibility_level = 2
 queue_directory = /var/spool/postfix
 command_directory = /usr/sbin
@@ -48,3 +48,6 @@ smtp_tls_security_level = may
 #
 meta_directory = /etc/postfix
 shlib_directory = /usr/lib64/postfix
+
+# the following is to enable port 587 which is needed for automatic setup in Outlook
+submission inet n - y - - smtpd
